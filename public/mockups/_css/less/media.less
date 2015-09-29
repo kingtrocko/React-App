@@ -1,0 +1,244 @@
+/*MAIN*/
+.video-col,
+.music-col{
+  h4.video-name{
+    font-size: 22px;
+    margin-bottom: 0;
+    height: 48px;
+    overflow: hidden;
+  }
+  span.date{
+    display: block;
+    font-size: 12px;
+    margin: 6px 0 2px;
+    color: @text-grey;
+  }
+}
+/*TOP VIDEO*/
+.main-video-block{
+  min-height: 500px;
+  background: #fff;   
+  margin-bottom: 22px;
+}
+.video-block-header{
+  .main,
+  .sub{
+    position: relative;
+    h1,
+    h2{
+      padding: 15px 175px 7px 0;
+      font-size: 36px;
+      margin: 0;
+      color: @text-blue;
+    }
+    .video-header-actions{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 16px;
+      >a.link{
+        float: left;
+        padding: 6px 0;
+        font-weight: 400;
+        margin: 0px 0 0 22px;
+      }
+    }    
+  }
+  .main{
+    margin: 0 18px;
+    border-bottom: 3px solid #c4c3ca;
+  }
+  .sub{
+    margin: 0 18px;
+    h2{
+      border-bottom:none;
+      color: @text-main;
+      font-size: 28px;
+      padding-top:9px; 
+    }
+    .video-header-actions{
+      bottom: 8px;
+    }
+  }
+}
+.by-team{
+  float: left;
+  .bootstrap-select{
+    width: auto !important;
+    button{
+      color: @text-blue;
+      background-color: transparent;
+      padding: 4px 12px 4px 0;
+      box-shadow: none !important ;
+      font-size: 16px;
+      .caret{
+        right:0 !important;
+      }
+    }
+  }
+}
+.video-share-facebook,
+.video-share-twitter,
+.video-share-google-plus{
+  width:48px;
+  height: 30px;
+  margin: 0 0 0 8px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #3b5998;
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  &:hover{
+    color: #fff;
+    background-color: #29488c;
+  }
+}
+.video-share-twitter{
+  background-color: #49c9f2;
+  &:hover{
+    background-color: #3ab6e0;
+  }
+}
+.video-share-google-plus{
+  background-color: #d13f2d;
+  &:hover{
+    background-color: #bf3321;
+  }
+}
+
+.responsive-video{
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+  &:before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.responsive-music{
+  iframe{
+    width: 100%;
+    height:124px;
+  }
+}
+.highlight-video{
+  padding: 18px 0;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 12px;
+  iframe{
+    opacity: .6;
+  }
+  iframe:hover{
+    opacity: 1;
+  }
+  .active{
+    iframe{
+      opacity: 1;
+    }
+  }
+}
+
+/*HEADER*/
+.media-list-block{
+  background: #fff;  
+  text-align: center;
+  padding: 0 5px 130px;
+  h2{
+    font-size: 30px;
+    color: @text-blue;
+    padding: 0 15px;
+    text-align: left;
+  }
+  
+  .section-header{
+    position: relative;
+    h2{
+      padding: 25px 135px 10px 7.5px;
+      font-size: 30px;
+      margin: 0;
+      color: @text-blue;
+    }
+    &.no-action{
+      h2{
+      padding: 25px 7.5px 10px 7.5px;
+      }
+    }
+    .header-actions{
+      position: absolute;
+      top: 28px;
+      right: 15px;
+      font-size: 16px;
+      a{
+        display: block;
+      }
+    }    
+  }
+  .section-div{
+    height: 1px;
+    margin: 15px 14px 25px;
+    background: #c4c3ca
+  }
+  .section-navigation{
+    margin: 15px 0 22px;
+    text-align: center;
+    ul{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0;
+    }
+    li{
+      display: inline-block;
+      list-style: none;
+      margin: 0 6px;
+      a{
+        color: #c4c3ca;
+        &:hover{
+          color: #898989;
+        }
+      }
+      &.active{
+        a{
+          color: #898989;  
+        }
+        
+      }
+    }
+    .arrow{
+      display: inline-block;
+      color: #c4c3ca;
+      font-size: 16px;
+      vertical-align: middle;
+      &:hover{
+        color: #898989;
+        text-decoration: none;
+      }
+    }
+  }
+}
+a.lyrics-link{
+  color: #9B9B9B;
+  display: block;
+  text-align: center;
+  line-height: 22px;
+  background: #F5F5F5;
+  border-radius: 3px;
+  border: 1px solid #ECECEC;
+  &:hover{
+    background: #efefef;
+    color: @bg-blue;
+  }
+}

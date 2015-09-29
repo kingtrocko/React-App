@@ -1,0 +1,52 @@
+.carousel{
+  .carousel-control{
+    opacity: 0;
+    width: 60px;
+    height: 115px;
+    background: rgba(0, 0, 0, 0.5);
+    top:50%;
+    margin-top: -63px;
+    svg{
+      margin: 40px 14px 0;
+    }
+  }
+  &:hover{
+    .carousel-control{
+      opacity: 1;  
+    }
+  }
+}
+
+.mTSButton{
+  z-index: 5;  
+}
+
+.mThumbnailScroller{
+  margin: 0;
+  padding-left: 0;
+  .mTSButtonLeft,
+  .mTSButtonRight{
+    opacity: 0;
+  }
+  &:hover{
+    .mTSButtonLeft,
+    .mTSButtonRight{
+      opacity: 1;
+    }
+  }
+}
+
+.mTS_horizontal .mTSThumbContainer, 
+.mTS_horizontal ul.mTSContainer > li{ 
+  width: 248px;
+}
+
+.section-carousel .mTS_horizontal .mTSThumbContainer, 
+.section-carousel .mTS_horizontal ul.mTSContainer > li{
+  width: 326px;
+}
+
+.section-carousel .mTSButtonLeft, 
+.section-carousel .mTSButtonRight{
+  top: 68px;
+}

@@ -1,0 +1,36 @@
+/*MAIN BG IMAGE*/
+@bg-image: url(../images/bg-01.jpg);
+
+
+/*Colors*/
+@bg-color: #e8e7ef;
+@bg-blue: #2d79be;
+@bi-purple: #674172;
+@text-main: #222222;
+@text-blue: #1b71a5;
+@text-grey: #a4a4b0;
+
+/*Restric Max Witdth to 990px*/
+@media (min-width: 1200px){
+  .container {
+    width: 990px;
+  }  
+}
+  
+  
+html,
+body{
+  background-color:@bg-color;
+  width: 100%;
+  min-height: 100%; 
+}
+body{
+  position: absolute;
+  background-image: @bg-image; 
+  background-position: top center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+} 
+.main-content{
+  padding-top: 187px;
+}

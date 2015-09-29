@@ -1,0 +1,429 @@
+.header{
+  position: fixed;
+}
+.top-header{
+  background-image: @bg-image; 
+  background-position: top center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  .actions-wrap{
+    float: right;
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      display: block;
+      float: left;
+    }
+  }
+}
+.navbar-toggle{
+  padding: 24px 10px;
+  .icon-bar{
+    background: #fff;
+  }
+}
+.navbar{
+  background: @bi-purple;
+  border-radius: 0px !important;
+  border: none;
+  margin: 0px;
+  color: #fff;
+}
+.language{
+  margin-top: 3px;
+  float: left;
+  .bootstrap-select{
+    width: auto !important;
+    button{
+      background-color: transparent;
+      color: @bi-purple;
+      padding-left: 0;
+      box-shadow: none !important ;
+    }
+  }
+}
+.share-icons-header{
+  color: #705f75;
+  float: left;
+  span,
+  a{
+    float: left;
+    font-size: 12px;
+  }
+  a{
+    color: #705f75;
+    margin: 0 8px;
+    
+  }
+  a.text{
+    line-height: 38px;
+  }
+  a.icon{
+    padding-top: 9px;
+    i{
+      font-size: 18px;
+      margin-top: 2px;
+    }
+    &:hover,
+    &:focus{
+      text-decoration: underline;
+    }
+  }
+}
+.bein-link{
+  float: left;
+  font-size: 12px;
+  color: #705f75;
+  margin: 0 8px;
+  line-height: 38px;
+  &:hover,
+  &:focus{
+    color: @bi-purple;
+    text-decoration: underline;
+  }
+}
+
+.left-divider,
+.right-divider{
+  float: left;
+  width: 1px;
+  height: 20px;
+  margin: 9px 0 0 6px;
+  padding: 0 12px 0 0;
+  border-left:1px solid rgba(173, 165, 179, 0.5);  
+}
+.left-divider{
+  padding-right: 2px;
+  margin-left: 2px;
+}
+.toggle-search{
+  display: none;
+  color: @bi-purple;
+  float: left;
+  line-height: 32px;
+}
+.share-icons-header a.text,
+.share-icons-header a.icon,
+.toggle-search{
+  &:hover,
+  &:focus{
+    color: @bi-purple;;
+    text-decoration: none;
+  }
+  
+}
+
+.search-box{
+  float: left;
+  width: auto;
+  height: 26px;
+  margin-top: 6px;
+  padding: 0 3px 0 10px;
+  background: #fff;
+  border-radius: 13px;
+  i,
+  input,
+  button{
+    float: left;
+  }
+  i{
+    margin: 5px 0px 0 0 ;
+  }  
+  input{
+    background-color: transparent;
+    border: none;
+    outline:none;
+    height: auto;
+    margin: 2px 0 0 4px;
+  }
+  button{
+    width: 42px;
+    height: 20px;
+    margin: 3px 0px 0 0;
+    outline:none;
+    border: none;
+    background: #cd5628;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    
+  }
+}
+.search-box-responsive{
+  position: relative;
+  display: none;
+  float: none;
+  clear: both;
+  background: rgba(255, 255, 255, 0.6);
+  margin: 0 -15px;
+  border-top: 1px solid #fff;
+  input{
+    width: 100%;
+    margin: 0;
+    padding: 0 60px 0 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: none
+  }
+  button{
+    position: absolute;
+    top:3px;
+    right: 3px;
+    width: 52px;
+    height: 28px;
+    margin: 3px 0px 0 0;
+    outline:none;
+    border: none;
+    background: #cd5628;
+    border-radius: 14px;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    
+  }
+}
+
+.navbar-brand{
+  color: #fff;
+  font-size: 60px; 
+  height: auto;
+  padding: 10px 20px;
+  &:hover,
+  &:focus{
+    background: #442a3f;
+    color: #fff;
+  }
+}
+.navbar-nav > li > a{ 
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  padding-left: 19px;
+  padding-right: 19px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  &:hover,
+  &:focus{
+    background: #442a3f;
+  }
+  i{
+    font-size: 129%;
+    vertical-align: text-top;
+    margin-right: 5px;
+  }
+}
+.navbar-nav > li:last-child{
+  a{
+    width: auto;
+    text-align: center;
+  }
+}
+.navbar-nav .active{
+  a{
+    background: #442a3f;
+  }
+}
+.navbar-nav > li.sub{
+  position: relative;
+  >a:after{
+    content: ">";
+    position: relative;
+    display: inline-block;
+    margin-left: .8rem;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    padding: 0;
+    width: 150px;
+    li{
+      list-style: none;
+      display: block;
+      background: #442a3f;
+      width: 100%;
+      a{
+        display: block;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: normal;
+        text-decoration: none;
+        &:hover,
+        &:focus{
+          background: #a688ae;
+        }
+      }
+    }
+  }
+  &:hover{
+    >a{
+      background: #442a3f;
+    }
+    ul{
+      display: block;
+    }
+  }
+  
+}
+
+
+
+.team-list{
+  background: @bg-blue;
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      list-style: none;
+      display: inline-block;
+    }
+  }
+  text-align: center;
+  a{
+    font-size: 13px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 22px;
+    color: #fff;
+    vertical-align: middle;
+    padding: 11px 0;
+    background-color: @bg-blue;
+  }
+  .team-flag{
+    width: auto;
+    height: 22px;
+    display: inline-block;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    padding-left: 26px;
+    font-style: normal;
+    &.arg-flag{
+      background-image: url('../images/flag/copaAmerica-flag-ARG.png');        
+    }
+    &.bol-flag{
+      background-image: url('../images/flag/copaAmerica-flag-BOL.png');        
+    }
+    &.bra-flag{
+      background-image: url('../images/flag/copaAmerica-flag-BRA.png');        
+    }
+    &.chi-flag{
+      background-image: url('../images/flag/copaAmerica-flag-CHI.png');        
+    }
+    &.col-flag{
+      background-image: url('../images/flag/copaAmerica-flag-COL.png');        
+    }
+    &.ecu-flag{
+      background-image: url('../images/flag/copaAmerica-flag-ECU.png');        
+    }
+    &.jam-flag{
+      background-image: url('../images/flag/copaAmerica-flag-JAM.png');        
+    }
+    &.mex-flag{
+      background-image: url('../images/flag/copaAmerica-flag-MEX.png');        
+    }
+    &.par-flag{
+      background-image: url('../images/flag/copaAmerica-flag-PAR.png');        
+    }
+    &.per-flag{
+      background-image: url('../images/flag/copaAmerica-flag-PER.png');        
+    }
+    &.uru-flag{
+      background-image: url('../images/flag/copaAmerica-flag-URU.png');        
+    }
+    &.ven-flag{
+      background-image: url('../images/flag/copaAmerica-flag-VEN.png');        
+    }
+  }
+  a:hover,
+  a:focus{
+    background: #1a5285;
+  }  
+}
+
+
+.micro-menu{
+  padding-top: 0;
+  padding-bottom: 0;
+  background-image: @bg-image; 
+  background-position: center -122px;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  .link{
+    width: 20%;
+    float: left;
+    border-right:1px solid #fff;
+    &:last-child{
+      border-right: none;
+    }
+  }
+  a{
+    display: block;
+    line-height: 32px;
+    color: @bi-purple;
+    .truncate-line(@width: 100%);
+  }
+  .dropdown.select-team{
+    width: 100% !important;
+    display: inline-block;
+    text-align: center;
+    .dropdown-toggle{
+      width: 100%;
+      float: none;
+      border: none;
+      color: @bi-purple;
+      background: rgba(255, 255, 255, 0.75);
+      padding: 6px 12px 6px 0;
+      margin: 0;
+      font-size: 14px;
+      border-radius: 0;
+      .filter-option{
+        .truncate-line(@width: 100%);
+      }
+      .caret{
+        right:0 !important;
+        margin-left: 5px;
+      }
+      &:hover,
+      &:focus{
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.90);
+      }
+    }
+    .dropdown-menu{
+      left: 50%;
+      margin-left: -80px;
+    }
+  }
+  
+  a,
+  .select-link{
+    min-height: 32px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.75);
+    &:hover,
+    &:focus{
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.90);
+    }
+    &.active{
+      background: rgba(255, 255, 255, 1);
+      font-weight: 600;
+    }
+  }
+}

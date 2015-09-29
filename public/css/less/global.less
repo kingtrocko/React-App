@@ -1,0 +1,223 @@
+/*MAIN BG IMAGE*/
+@bg-image: url(../images/bg-01.jpg);
+@bg-image-landing: url(../images/bg-02.jpg);
+
+
+/*Colors*/
+@bg-color: #e8e7ef;
+@bg-blue: #2d79be;
+@bi-purple: #674172;
+@text-main: #222222;
+@text-blue: #1b71a5;
+@text-grey: #a4a4b0;
+
+/*Restric Max Witdth to 990px*/
+@media (min-width: 1200px){
+  .container {
+    width: 990px;
+  }  
+}
+  
+  
+html,
+.application,
+.landing{
+  background-color:@bg-color;
+  width: 100%;
+  min-height: 100%; 
+}
+.application,
+.landing{
+  position: absolute;
+  background-image: @bg-image; 
+  background-position: top center;
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+}
+
+div.landing{
+  background-image:@bg-image-landing;
+  .container{
+    text-align: center;
+    margin-top: 40px;
+    img{
+      width: 600px;
+    }
+  }
+}
+.main-content{
+  padding-top: 160px;
+}
+.loading{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: @bi-purple;
+  opacity: 0.99;
+  text-align: center;
+  i{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    top: 50%;
+    margin: -25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    color: #fff;
+  }
+}
+
+.select-mashup-track .dropdown{
+  display: inline-block;
+  float: none;    
+}
+.select-mashup-track .dropdown .btn-default{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 40px;
+  background: none;
+  &:hover{
+    background: none;
+  }
+  .caret{
+    margin-left: 5px;
+  }
+}
+
+.customVideoName:first-letter {
+ text-transform:lowercase;
+}
+
+/* Button Default */
+.btn-default {
+  background-color: @bi-purple;
+  border-color: @bi-purple;
+  color: #fff;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-color: lighten(@bi-purple, 4%);
+  color: #fff;
+  border-color: @bi-purple;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default{
+  background: darken(@bi-purple, 5%);
+  box-shadow: none;
+  color: #fff;
+}
+
+.btn-default .badge {
+  color: @bi-purple;
+  background-color: #fff;
+}
+
+/* Button Primary */
+.btn-primary {
+  background-color: @text-blue;
+  border-color: @text-blue;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: lighten(@text-blue, 4%);
+  color: #fff;
+  border-color: @text-blue;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background: darken(@text-blue, 5%);
+  box-shadow: none;
+  color: #fff;
+}
+.btn-primary .badge {
+  color: @text-blue;
+  background-color: #fff;
+}
+
+
+/* Button white */
+.btn-white {
+  background-color: #E4E4E4;
+  color: #666;
+}
+.btn-white:hover,
+.btn-white:focus,
+.btn-white.focus,
+.btn-white:active,
+.btn-white.active,
+.open > .dropdown-toggle.btn-white {
+  background-color: lighten(#E4E4E4, 4%);
+  color: #666;
+}
+.btn-white:active,
+.btn-white.active,
+.open > .dropdown-toggle.btn-white {
+  background: darken(#E4E4E4, 5%);
+  box-shadow: none;
+  color: #666;
+}
+.btn-white .badge {
+  color: #E4E4E4;
+  background-color: #fff;
+}
+
+/*Alerts*/
+.top-fixed{
+  position: fixed;
+  top:10px;
+  right: 10px;
+  z-index: 9999;
+  display: inline-block;
+  text-align: center;
+}
+
+.alert.drop-shadow{
+  box-shadow: 0 0 10px #000;
+}
+
+.btn-audiocommon {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  line-height: 40px;
+  background: none;
+  color: #333;
+  border-color: #ccc
+}
+
+.btn-show-lyric {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-size: 92%;
+  margin-left: 5px;
+  line-height: 26px;
+  color: #333;
+  border-color: #ccc;
+}
